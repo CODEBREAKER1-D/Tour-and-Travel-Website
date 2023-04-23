@@ -1,0 +1,46 @@
+EXP 1 Git comman 3 HTML files: $cd to the repository , mkdir myproject , git init , Use touch to create 3 .html files , git add. , git commit -m " " , Use github repository link code , git remote -v , git push -u origin master , git pull origin master or Git pull --rebase origin master.
+ 
+EXP 2 Build java program in jenkins: Make a java program in intellij keep java file name Main , Build job in Jenkins , Paste location in custom workshop , In execute windows batch command type: javac Main.java
+                                                            java Main
+ 
+EXP demonstrate CI: build job in pipeline , git hub project link , add script code , after that run script in scm using the https://github.com/Rohit-ojha07/forPipeline.git 
+pipeline {
+ agent any
+stages {
+stage('One') {
+steps {
+echo 'Hello welcome to pipeline demo'
+}
+}
+stage('Two') {
+steps {
+echo 'Sample Testing Stage 2'
+}
+}
+stage('Three') {
+steps {
+echo 'Thanks for using Jenkins'
+}
+}
+}
+}
+ 
+EXP 7 PHP docker file: 1. First, create a folder named PHP Hello Docker and open it in Visual Studio Code. 2. Open this folder in Visual Studio Code and create a file named hello.php or can take any simple html file with hello.html .
+<html>
+<?phpecho"Hello world from php container ">
+</html>
+3. Next, create a file called Dockerfile (without any extension) and write the below code into
+the file. Now with Docker file let construct an image.
+FROM php
+COPY ./ ./
+EXPOSE 3000
+CMD ["php","-S","0.0.0.0:3000"]
+4. Use the docker build command on terminal
+docker build . -t dockerhubaccountname/foldername 
+5. Now run the container using following command.
+docker run --name=php -p=3000:3000 dockerhubaccountname/foldername
+6. After that new container is running on to browser window. Type localhost:3000 on browser 
+ 
+EXP 8 Docker push pull: CMD- docker images , docker login , docker tag name: version tag/imagename , docker push , docker pull command once it is uploaded.
+ 
+EXP 6: 
