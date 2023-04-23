@@ -39,8 +39,8 @@ CMD ["php","-S","0.0.0.0:3000"]
 docker build . -t dockerhubaccountname/foldername 
 5. Now run the container using following command.
 docker run --name=php -p=3000:3000 dockerhubaccountname/foldername
-6. After that new container is running on to browser window. Type localhost:3000 on browser 
- 
+6. After that new container is running on to browser window. Type localhost:3000/hello.php on browser 
+
 EXP 8 Docker push pull: CMD- docker images , docker login , docker tag name: version tag/imagename , docker push , docker pull command once it is uploaded.
  
-EXP 6: 
+
